@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/doce.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Trufa La Choc</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-cookie-bite" id="nav_logo"> <strong>LA</strong>choc</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#categoria">Categoria</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#endereço">Endereço</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">Peça aqui</button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#categoria">Categoria</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#endereço">Endereço</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">Peça aqui</button>
+        </div>
+    </header>
+
+     <main id="content">
+        <video autoplay loop muted>
+            <source src="video/videomeump4.mp4" type="video/mp4">
+            <source src="video/videomkv.mkv" type="video/mkv">
+            <source src="video/videoogv.ogv" type="video/ogg">
+            <source src="video/videowebm.webm" type="video/webm">    
+        </video>
+
+        <div class="mascara"></div>
+
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">Chocolate, <span>beijo na alma</span> que derrete em felicidade na boca.</h1>
+
+                <div id="cta_buttons">
+                    <a href="#categoria" class="btn-default">Ver categoria</a>
+
+                    <a href="tel:+55555" id="phone_button"><button class="btn-default">
+                        <i class="fa-solid fa-phone"></i>
+                    </button>(64)8659-5487</a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="img/trufa-logo.png" alt="img-logo">
+            </div>
+        </section>
+
+        <section id="categoria">
+            <h2 class="section-title">Nossas categorias</h2>
+            <h3 class="section-subtitle">Explosão em cada pedaço</h3>
+
+            <div id="truffles">
+                <div class="truffle">
+                    <div class="truffle-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="img/trufa-oreo.png" class="truffle-image" alt="">
+
+                    <h3 class="truffle-title">Trufa de Oreo</h3>
+
+                    <span class="truffle-description"> Brigadeiro de ninho recheado com nutella e banhado com chocolate branco e oreo triturado.</span>
+
+                    <div class="truffle-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="truffle-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="truffle">
+                    <div class="truffle-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="img/trufa-brigadeiro.png" class="truffle-image" alt="">
+
+                    <h3 class="truffle-title">Trufa de Brigadeiro</h3>
+
+                    <span class="truffle-description">Deliciosa trufa de chocolate ao leite com recheio cremoso de brigadeiro.</span>
+
+                    <div class="truffle-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="truffle-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="truffle">
+                    <div class="truffle-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="img/trufa-coco.png" class="truffle-image" alt="">
+
+                    <h3 class="truffle-title">Trufa de Coco</h3>
+
+                    <span class="truffle-description">Recheio macio e sabor delicioso por dentro. O chocolate ao leite e o coco formam uma deliciosa combinação.</span>
+
+                    <div class="truffle-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="truffle-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="truffle">
+                    <div class="truffle-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="img/trufa-maracuja.png" class="truffle-image" alt="">
+
+                    <h3 class="truffle-title">Trufa de Maracujá</h3>
+
+                    <span class="truffle-description">Uma fina camada deliciosa de chocolate ao leite, com um recheio cremoso de maracujá.</span>
+
+                    <div class="truffle-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="truffle-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="truffle">
+                    <div class="truffle-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="img/trufa-morango.png" class="truffle-image" alt="">
+
+                    <h3 class="truffle-title">Trufa de Morango</h3>
+
+                    <span class="truffle-description">Combinação perfeita de chocolate ao leite com um cremoso recheio de morango em pedaços.</span>
+
+                    <div class="truffle-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="truffle-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="truffle">
+                    <div class="truffle-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="img/trufa-nozes.png" class="truffle-image" alt="">
+
+                    <h3 class="truffle-title">Trufa de Nozes</h3>
+
+                    <span class="truffle-description">Chocolate amargo com um cremoso recheio de nozes crocantes.</span>
+
+                    <div class="truffle-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="truffle-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="endereço" class="endereço">
+            <h2 class="section-title">Nosso endereço</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15286.405684168121!2d-49.39615614458007!3d-16.696817199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935e5f72e7eaebd7%3A0x21f0684ff0e589cc!2sTrufas%20recheadas!5e0!3m2!1spt-BR!2sbr!4v1713406281794!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+     </main>
+                
+            <footer>
+                    <div id="footer_itens">
+                        <span id="copyright">
+                            &copy 2024 Bárbara Gonçalves
+                        </span>
+                        <div class="social-media-buttons">
+                            <a href="">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+            </footer>
+    <script src="script.js"></script>
+</body>
+</html>

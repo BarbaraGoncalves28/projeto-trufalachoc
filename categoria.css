@@ -1,0 +1,84 @@
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#categoria, .section-title, .section-subtitle{
+    text-align: center;
+}
+
+#truffles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.truffle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 30px;
+    background-color: var(--lightpink);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.truffle-heart{
+    position: absolute;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--lightpink);
+    width: 60px;
+    height: 60px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.truffle-description{
+    color: var(--main-color);
+    justify-content: center;
+}
+
+.truffle-rate i{
+    color: #e9a209;
+}
+
+.truffle-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1170px){
+    #truffles{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .truffle{
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .truffle{
+        width: 100%;
+    }
+
+    #categoria, .section-title, .section-subtitle{
+        text-align: center;
+    }
+}

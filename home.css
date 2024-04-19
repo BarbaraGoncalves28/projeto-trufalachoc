@@ -1,0 +1,106 @@
+video{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: cover;
+    object-fit: cover;
+}
+
+section, footer{
+    position: relative;
+    z-index: 3;
+}
+
+.mascara{
+    background:  linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: absolute;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+#home{
+    display: flex;
+    min-height: calc(100vh - 95px);
+    z-index: 3;
+    position: relative;
+}
+
+#cta{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title span{
+    color: var(--pink);
+}
+
+#cta .title{
+    font-size: 1.6rem;
+    color: var(--lightbrown);
+}
+
+#cta_buttons{
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+   color: var(--pink);
+}
+
+#phone_button{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: var( --lightpink);
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button{
+    box-shadow: none;
+}
+
+#banner{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+}
+
+#banner img{
+    height: 100%;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1170px) {
+    #home{
+        height: 100%;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }   
+
+    #cta, #banner img{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 450px){
+        #phone_button button{
+            display: none;
+        }
+    }
+}
